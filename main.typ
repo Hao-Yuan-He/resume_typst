@@ -6,7 +6,7 @@
 #let email = "alkane0050@gmail.com"
 #let github = "github.com/stuxf"
 #let linkedin = "linkedin.com/in/stuxf"
-#let phone = "+86 18851768896"
+#let phone = "Phone number"
 #let personal-site = "hao-yuan-he.github.io"
 #let img = "prof_pic.png"
 
