@@ -100,8 +100,8 @@
   )
 
   place(
-  top + right,
   image(img, width: 50pt),
+  dx:6.8in,dy:-0.65in,
 )
 
   // Main body.
