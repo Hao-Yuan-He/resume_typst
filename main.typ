@@ -12,7 +12,7 @@
 
 #show: resume.with(
   author: name,
-  // All the lines below are optional. 
+  // All the lines below are optional.
   // For example, if you want to to hide your phone number:
   // feel free to comment those lines out and they will not show.
   location: location,
@@ -20,23 +20,23 @@
   // github: github,
   // linkedin: linkedin,
   phone: phone,
-  img:img,
+  img: img,
   personal-site: personal-site,
   accent-color: "#26428b",
 )
 
 /*
-* Lines that start with == are formatted into section headings
-* You can use the specific formatting functions if needed
-* The following formatting functions are listed below
-* #edu(dates: "", degree: "", gpa: "", institution: "", location: "")
-* #work(company: "", dates: "", location: "", title: "")
-* #project(dates: "", name: "", role: "", url: "")
-* #extracurriculars(activity: "", dates: "")
-* There are also the following generic functions that don't apply any formatting
-* #generic-two-by-two(top-left: "", top-right: "", bottom-left: "", bottom-right: "")
-* #generic-one-by-two(left: "", right: "")
-*/
+ * Lines that start with == are formatted into section headings
+ * You can use the specific formatting functions if needed
+ * The following formatting functions are listed below
+ * #edu(dates: "", degree: "", gpa: "", institution: "", location: "")
+ * #work(company: "", dates: "", location: "", title: "")
+ * #project(dates: "", name: "", role: "", url: "")
+ * #extracurriculars(activity: "", dates: "")
+ * There are also the following generic functions that don't apply any formatting
+ * #generic-two-by-two(top-left: "", top-right: "", bottom-left: "", bottom-right: "")
+ * #generic-one-by-two(left: "", right: "")
+ */
 
 == Education
 
@@ -88,7 +88,7 @@ My research interests lie in the field of machine learning, with a particular fo
 
 #work(
   title: "Conference Reviewer / PC Member",
-  des: "ACML’2023, IJCLR’2024, MATH-AI@NeurIPS’2024, ICLR’2025",
+  des: "ACML’2023, IJCLR’2024, MATH-AI@NeurIPS’2024, ICLR’2025, ICML’2025",
   dates: dates-helper(start-date: "2023", end-date: "Now"),
 )
 
@@ -102,9 +102,9 @@ My research interests lie in the field of machine learning, with a particular fo
 == Awards
 
 #award(
-  name:"Outstanding Graduate Student",
-  des:"Nanjing University",
-  dates:"2023"
+  name: "Outstanding Graduate Student",
+  des: "Nanjing University",
+  dates: "2023, 2024",
 )
 
 #award(
@@ -115,18 +115,18 @@ My research interests lie in the field of machine learning, with a particular fo
 
 #award(
   name: "First Price of Academic Scholarship",
-  des:"Top 10%, Nanjing University",
-  dates:"2022, 2023"
+  des: "Top 10%, Nanjing University",
+  dates: "2022, 2023",
 )
 
 #award(
   name: "National Encouragement Scholarship",
-  des:"JiangSu Education Department",
-  dates:"2019",
+  des: "JiangSu Education Department",
+  dates: "2019",
 )
 
 #award(
-  name:"The First Price of The Chinese Mathematics Competitions",
-  des:"Chinese Mathematical Society",
-  dates:"2018, 2020",
+  name: "The First Price of The Chinese Mathematics Competitions",
+  des: "Chinese Mathematical Society",
+  dates: "2018, 2020",
 )
