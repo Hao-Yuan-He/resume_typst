@@ -6,11 +6,11 @@
   linkedin: "",
   phone: "",
   personal-site: "",
+  social_media: "",
   accent-color: "#000000",
-  img:"",
+  img: "",
   body,
 ) = {
-
   // Sets document metadata
   set document(author: author, title: author)
 
@@ -21,12 +21,12 @@
     size: 10pt,
     lang: "en",
     // Disable ligatures so ATS systems do not get confused when parsing fonts.
-    ligatures: true
+    ligatures: true,
   )
 
   // Reccomended to have 0.5in margin on all sides
   set page(
-    margin: (0.5in),
+    margin: 0.5in,
     "us-letter",
   )
 
@@ -56,36 +56,49 @@
     #set text(
       weight: 400,
       size: 20pt,
-      font: ( "Linux Libertine","Songti SC"),
+      font: ("Linux Libertine", "Songti SC"),
     )
     #it.body
   ]
 
   show image: it => block(
-    radius: 50pt, clip: true
+    radius: 50pt,
+    clip: true,
   )[#it]
 
 
   let personal_info = (
-          if phone != "" {
-            phone
-          },
-          if location != "" {
-            location
-          },
-          if email != "" {
-            link("mailto:" + email)[#email]
-          },
-          if github != "" {
-            link("https://" + github)[#github]
-          },
-          if linkedin != "" {
-            link("https://" + linkedin)[#linkedin]
-          },
-          if personal-site != "" {
-            link("https://" + personal-site)[#personal-site]
-          },
-        ).filter(x => x != none).join("  |  ")
+    if phone != "" {
+      phone
+    },
+    if location != "" {
+      location
+    },
+    if email != "" {
+      link("mailto:" + email)[#email]
+    },
+    if github != "" {
+      link("https://" + github)[#github]
+    },
+    if linkedin != "" {
+      link("https://" + linkedin)[#linkedin]
+    },
+    if personal-site != "" {
+      link("https://" + personal-site)[#personal-site]
+    },
+  )
+    .filter(x => x != none)
+    .join("  |  ")
+
+
+  let social_media = (
+    if social_media != "" {
+      [#social_media]
+    },
+  )
+    .filter(x => x != none)
+    .join("  |  ")
+
 
   // Level 1 Heading
   [= #(author)]
@@ -93,16 +106,18 @@
   pad(
     top: 0.25em,
     align(left)[
-      #(
-        personal_info
-      )
+      #(personal_info)
+
+      #(social_media)
     ],
   )
 
+
   place(
-  image(img, width: 50pt),
-  dx:6.8in,dy:-0.65in,
-)
+    image(img, width: 50pt),
+    dx: 6.8in,
+    dy: -1in,
+  )
 
   // Main body.
   set par(justify: true)
@@ -153,27 +168,26 @@
     top-left: strong(institution),
     bottom-left: text[
       #set text(
-      weight: 100,
-      size: 9pt,
-      font: ("Calibri","STFangsong",),
-    )
+        weight: 100,
+        size: 9pt,
+        font: ("Calibri", "STFangsong"),
+      )
       #degree
     ],
-    top-right: text(gray)[#dates]
+    top-right: text(gray)[#dates],
   )
 }
 
 #let description(
-  des:"",
+  des: "",
 ) = {
-  
-align(left)[
-  #set text(
+  align(left)[
+    #set text(
       weight: 200,
       size: 8pt,
-      font: ("Calibri","STFangsong",),
+      font: ("Calibri", "STFangsong"),
     )
-  #des
+    #des
   ]
 }
 
@@ -189,18 +203,18 @@ align(left)[
     top-right: dates,
     bottom-left: text[
       #set text(
-      weight: 100,
-      size: 9pt,
-      font: ("Calibri","STFangsong",),
-    )
+        weight: 100,
+        size: 9pt,
+        font: ("Calibri", "STFangsong"),
+      )
       #des
     ],
     bottom-right: emph[
       #set text(
-      weight: 100,
-      size: 9pt,
-      font: ("Calibri","STFangsong",),
-    )
+        weight: 100,
+        size: 9pt,
+        font: ("Calibri", "STFangsong"),
+      )
       #location
     ],
   )
@@ -230,17 +244,17 @@ align(left)[
 
 #let award(
   name: "",
-  des:"",
+  des: "",
   dates: "",
 ) = {
   generic-two-by-two(
     top-left: strong(name),
     bottom-left: text[
       #set text(
-      weight: 100,
-      size: 9pt,
-      font: ("Calibri","STFangsong",),
-    )
+        weight: 100,
+        size: 9pt,
+        font: ("Calibri", "STFangsong"),
+      )
       #des
     ],
     top-right: dates,
