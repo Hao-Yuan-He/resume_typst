@@ -114,9 +114,9 @@
 
 
   place(
-    image(img, width: 50pt),
-    dx: 6.8in,
-    dy: -1in,
+    image(img, width: 80pt),
+    dx: 6.4in,
+    dy: -1.5in,
   )
 
   // Main body.

@@ -65,8 +65,9 @@
 
 
 == Hobbies
-I am used to perform sports like running (usually 5km), swimming (usually, badminton and pingpong.
-I aslo like chinese crosstalk (相声) and standup comedy.
+I am used to play sports like running (usually 5km), swimming, badminton and ping-pong.
+
+I aslo like chinese crosstalk (相声) and stand-up comedy.
 
 
 == Research
