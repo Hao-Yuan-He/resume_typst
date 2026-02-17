@@ -80,15 +80,15 @@ My research interests lie in the field of machine learning, with a particular fo
 #bibliography("works.bib", title: none, full: true)
 
 == Academic Service
-#work(
-  title: "Volunteer",
-  des: "MLA’2023, IJCLR’2024",
-  dates: dates-helper(start-date: "2023", end-date: "Now"),
-)
+// #work(
+//   title: "Volunteer",
+//   des: "MLA’2023, IJCLR’2024",
+//   dates: dates-helper(start-date: "2023", end-date: "Now"),
+// )
 
 #work(
   title: "Conference Reviewer / PC Member",
-  des: "ACML’2023, IJCLR’2024, MATH-AI@NeurIPS’2024, ICLR’2025, ICML’2025",
+  des: "ACML, IJCLR, ICLR, ICML, NeurIPS and AAAI",
   dates: dates-helper(start-date: "2023", end-date: "Now"),
 )
 

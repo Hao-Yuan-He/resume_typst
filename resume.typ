@@ -55,8 +55,8 @@
     #set align(left)
     #set text(
       weight: 400,
-      size: 20pt,
-      font: ("Linux Libertine", "Songti SC"),
+      size: 18pt,
+      font: ("Times New Roman", "Yuanti TC"),
     )
     #it.body
   ]
@@ -114,9 +114,9 @@
 
 
   place(
-    image(img, width: 80pt),
+    image(img, width: 75pt),
     dx: 6.4in,
-    dy: -1.5in,
+    dy: -1.2in,
   )
 
   // Main body.
