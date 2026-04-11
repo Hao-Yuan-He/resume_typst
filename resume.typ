@@ -115,8 +115,8 @@
 
   place(
     image(img, width: 75pt),
-    dx: 6.4in,
-    dy: -1.2in,
+    dx: 6.5in,
+    dy: -.8in,
   )
 
   // Main body.
